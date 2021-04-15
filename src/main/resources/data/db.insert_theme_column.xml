@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet author="Ildar" id="10">
+        <insert tableName="theme">
+            <column name="theme" value="IT"/>
+        </insert>
+        <insert tableName="theme">
+            <column name="theme" value="Авто"/>
+        </insert>
+        <insert tableName="theme">
+            <column name="theme" value="Оружие"/>
+        </insert>
+        <insert tableName="theme">
+            <column name="theme" value="Медицина"/>
+        </insert>
+        <insert tableName="theme">
+            <column name="theme" value="Экология"/>
+        </insert>
+        <insert tableName="theme">
+            <column name="theme" value="Горное дело"/>
+        </insert>
+        <insert tableName="theme">
+            <column name="theme" value="Индустрия"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,40 @@
+.logo{
+    padding: 10px 10px 10px 20px;
+
+}
+.link-logo{
+    text-decoration: none;
+    color: white;
+
+}
+.link-logo:hover{
+    color: white;
+}
+.my-navbar{
+    width: border-box;
+}
+
+.header-post{
+    margin: 10px;
+    color: white;
+
+}
+
+.btn-logout{
+    float: right;
+
+
+}
+.img200{
+    width: 200px;
+    height: 200px;
+
+}
+.imgProfile{
+
+}
+.infoProfile{
+
+}
+
+

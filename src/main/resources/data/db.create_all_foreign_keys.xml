@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet author="Ildar" id="7">
+        <addForeignKeyConstraint
+                baseTableName="article"
+                baseColumnNames="theme_id"
+                constraintName="theme_id_to_theme"
+                referencedTableName="theme"
+                referencedColumnNames="theme_id"/>
+
+        <addForeignKeyConstraint
+                baseTableName="article"
+                baseColumnNames="user_id"
+                constraintName="theme_id_to_user"
+                referencedTableName="user"
+                referencedColumnNames="user_id"/>
+
+        <addForeignKeyConstraint
+                baseTableName="comment"
+                baseColumnNames="article_id"
+                constraintName="comment_to_article"
+                referencedTableName="article"
+                referencedColumnNames="article_id"/>
+
+        <addForeignKeyConstraint
+                baseTableName="comment"
+                baseColumnNames="user_id"
+                constraintName="comment_to_user"
+                referencedTableName="user"
+                referencedColumnNames="user_id"/>
+
+        <addForeignKeyConstraint
+                baseTableName="like"
+                baseColumnNames="article_id"
+                constraintName="like_to_article"
+                referencedTableName="article"
+                referencedColumnNames="article_id"/>
+
+        <addForeignKeyConstraint
+                baseTableName="like"
+                baseColumnNames="user_id"
+                constraintName="like_to_user"
+                referencedTableName="user"
+                referencedColumnNames="user_id"/>
+
+        <addForeignKeyConstraint
+                baseTableName="user"
+                baseColumnNames="country_id"
+                constraintName="user_to_country"
+                referencedTableName="country"
+                referencedColumnNames="country_id"/>
+    </changeSet>
+</databaseChangeLog>

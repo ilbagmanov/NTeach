@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <include  file="data/db.create_country.xml" relativeToChangelogFile="true"/>
+    <include  file="data/db.create_article.xml" relativeToChangelogFile="true"/>
+    <include  file="data/db.create_comment.xml" relativeToChangelogFile="true"/>
+    <include  file="data/db.create_like.xml" relativeToChangelogFile="true"/>
+    <include  file="data/db.create_theme.xml" relativeToChangelogFile="true"/>
+    <include  file="data/db.create_user.xml" relativeToChangelogFile="true"/>
+    <include  file="data/db.create_all_foreign_keys.xml" relativeToChangelogFile="true"/>
+    <include  file="data/db.insert_country_colum.xml" relativeToChangelogFile="true"/>
+    <include  file="data/db.add_admin_to_user.xml" relativeToChangelogFile="true"/>
+    <include  file="data/db.insert_theme_column.xml" relativeToChangelogFile="true"/>
+</databaseChangeLog>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet author="Ildar" id="9">
+        <insert tableName="user">
+            <column name="name" value="admin"/>
+            <column name="surname" value="admin"/>
+            <column name="age" value="18"/>
+            <column name="email" value="admin@mail.ru"/>
+            <column name="password" value="c3ca493c039fb368b6eb8d445ca80f6c79d97d80a7193bd54e9da8a1e870357c707da9d8f579bfd451bd0e01178b55f095a1086a9551a83a1472b3f22e862eb5"/>
+            <column name="country_id" value="1"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
